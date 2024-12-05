@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#fcf5f5, #eff4fd);
+    font-family: 'Arial', sans-serif;
+}
+
+.main-div {
+    width: 40vw;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding: 30px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+        rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #888 #f0f0f0; /* Firefox */
+}
+
+/* For Chrome, Edge, and Safari */
+.main-div::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main-div::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.main-div::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    font-family: cursive;
+    text-transform: capitalize;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.main-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.main-heading p {
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    background: #fff;
+    padding: 5px;
+    margin-right: 15px;
+    transition: background 0.3s ease;
+}
+
+.main-heading p:hover {
+    background: #ddd;
+}
+
+.answers {
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    word-spacing: 2px;
+    font-weight: 400;
+    line-height: 1.7;
+    background: #fcf5f5;
+    color: rgb(40, 37, 53);
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
